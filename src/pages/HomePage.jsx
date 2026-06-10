@@ -63,9 +63,6 @@ const HomePage = () => {
         >
           메인 비주얼, 이름, 간단 소개가 들어갈 예정입니다.
         </Typography>
-        <Button variant="contained" color="primary" size="large" sx={{ px: 5, py: 1.5 }}>
-          시작하기
-        </Button>
       </Container>
     </Box>
 
