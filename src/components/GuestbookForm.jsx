@@ -11,12 +11,9 @@ import { supabase } from '../lib/supabaseClient'
 
 const ACCENT = '#C9944A'
 
-const EMOJIS = ['😊', '😄', '🥹', '🤔', '🎉', '💎', '✨', '🌟', '💫', '🪨', '🙏', '👋']
-
 const GuestbookForm = ({ onSubmitted }) => {
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
-  const [emoji, setEmoji] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [success, setSuccess] = useState(false)
@@ -31,7 +28,6 @@ const GuestbookForm = ({ onSubmitted }) => {
     const { error: supabaseError } = await supabase.from('guestbook').insert({
       name: name.trim(),
       message: message.trim(),
-      emoji: emoji || null,
     })
 
     setLoading(false)
@@ -44,7 +40,6 @@ const GuestbookForm = ({ onSubmitted }) => {
     setSuccess(true)
     setName('')
     setMessage('')
-    setEmoji('')
     onSubmitted?.()
 
     setTimeout(() => setSuccess(false), 4000)
@@ -108,37 +103,6 @@ const GuestbookForm = ({ onSubmitted }) => {
           helperText={`${message.length} / 300`}
           sx={fieldSx}
         />
-
-        <Box>
-          <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block', mb: 1 }}>
-            감정 표현 (선택)
-          </Typography>
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
-            {EMOJIS.map((e) => (
-              <Box
-                key={e}
-                onClick={() => setEmoji(emoji === e ? '' : e)}
-                sx={{
-                  width: 36,
-                  height: 36,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '1.25rem',
-                  cursor: 'pointer',
-                  border: '1px solid',
-                  borderColor: emoji === e ? ACCENT : 'divider',
-                  backgroundColor: emoji === e ? `${ACCENT}18` : 'transparent',
-                  transition: 'all 0.15s ease',
-                  userSelect: 'none',
-                  '&:hover': { borderColor: ACCENT },
-                }}
-              >
-                {e}
-              </Box>
-            ))}
-          </Box>
-        </Box>
 
         <Button
           type="submit"
