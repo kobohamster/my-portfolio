@@ -5,7 +5,7 @@ import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined'
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined'
 import { supabase } from '../lib/supabaseClient'
 
-const ACCENT = '#7C6B5A'
+const ACCENT = '#C9944A'
 const PAGE_SIZE = 10
 
 const formatDate = (iso) => {

@@ -9,7 +9,7 @@ import {
 } from '@mui/material'
 import { supabase } from '../lib/supabaseClient'
 
-const ACCENT = '#7C6B5A'
+const ACCENT = '#C9944A'
 
 const EMOJIS = ['😊', '😄', '🥹', '🤔', '🎉', '💎', '✨', '🌟', '💫', '🪨', '🙏', '👋']
 
@@ -145,14 +145,14 @@ const GuestbookForm = ({ onSubmitted }) => {
           variant="contained"
           disabled={loading || !name.trim() || !message.trim()}
           sx={{
-            backgroundColor: '#252220',
+            backgroundColor: '#C9944A',
             color: '#fff',
             borderRadius: 0,
             py: 1.25,
             mt: 0.5,
             letterSpacing: '0.08em',
             fontSize: '0.8125rem',
-            '&:hover': { backgroundColor: '#3D3A37' },
+            '&:hover': { backgroundColor: '#E0B86A' },
             '&.Mui-disabled': { backgroundColor: 'divider', color: 'text.disabled' },
           }}
         >
@@ -167,10 +167,10 @@ const fieldSx = {
   '& .MuiOutlinedInput-root': {
     borderRadius: 0,
     '& fieldset': { borderColor: 'divider' },
-    '&:hover fieldset': { borderColor: '#7C6B5A' },
-    '&.Mui-focused fieldset': { borderColor: '#7C6B5A' },
+    '&:hover fieldset': { borderColor: '#C9944A' },
+    '&.Mui-focused fieldset': { borderColor: '#C9944A' },
   },
-  '& .MuiInputLabel-root.Mui-focused': { color: '#7C6B5A' },
+  '& .MuiInputLabel-root.Mui-focused': { color: '#C9944A' },
   '& .MuiFormHelperText-root': { textAlign: 'right', mr: 0 },
 }
 

@@ -24,7 +24,7 @@ const SectionDivider = () => (
   <Divider sx={{ borderColor: 'divider' }} />
 )
 
-const ACCENT = '#7C6B5A'
+const ACCENT = '#C9944A'
 
 const HomePage = () => {
   const [refreshKey, setRefreshKey] = useState(0)
