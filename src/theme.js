@@ -2,28 +2,30 @@ import { createTheme } from '@mui/material/styles'
 
 const theme = createTheme({
   palette: {
+    mode: 'dark',
     primary: {
-      main: '#2C5AA0',
-      light: '#4A7CB8',
-      dark: '#1A3F7A',
+      main:  '#4A46AA',
+      light: '#6B5CC5',
+      dark:  '#1E1B6B',
     },
     secondary: {
-      main: '#4A7C3F',
-      light: '#6AA85A',
-      dark: '#2A5A28',
+      main:  '#EDE8F8',
+      light: '#FFFFFF',
+      dark:  '#C5BFEA',
     },
     error: {
-      main: '#E8352A',
+      main: '#CF6679',
     },
     background: {
-      default: '#E8E4DC',
-      paper: '#D4EAF5',
+      default: '#13114A',
+      paper:   '#1E1B6B',
     },
     text: {
-      primary: '#1C1C1C',
-      secondary: '#2C5AA0',
-      disabled: '#8C8C8C',
+      primary:  '#FFFFFF',
+      secondary: '#9B93D9',
+      disabled:  '#5A529A',
     },
+    divider: '#3D38A0',
   },
   typography: {
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
@@ -38,32 +40,39 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         contained: {
-          backgroundColor: '#4A7C3F',
+          backgroundColor: '#6B5CC5',
           color: '#FFFFFF',
           borderRadius: 0,
           '&:hover': {
-            backgroundColor: '#6AA85A',
+            backgroundColor: '#4A46AA',
           },
         },
         outlined: {
-          borderColor: '#2C5AA0',
+          borderColor: '#6B5CC5',
+          color: '#6B5CC5',
           borderRadius: 0,
+          '&:hover': {
+            borderColor: '#9B93D9',
+            color: '#9B93D9',
+          },
         },
       },
     },
     MuiCard: {
       styleOverrides: {
         root: {
-          border: '2px solid #1A3F7A',
+          border: '2px solid #3D38A0',
           borderRadius: 0,
-          backgroundColor: '#D4EAF5',
+          backgroundColor: '#1E1B6B',
         },
       },
     },
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#2C5AA0',
+          backgroundColor: '#1E1B6B',
+          borderBottom: '1px solid #3D38A0',
+          boxShadow: '0 4px 24px rgba(30, 27, 107, 0.5)',
         },
       },
     },

@@ -32,10 +32,10 @@ const Navbar = () => {
                   color: '#FFFFFF',
                   borderRadius: 0,
                   borderBottom: location.pathname === item.path
-                    ? '3px solid #F0E040'
+                    ? '3px solid #C5BFEA'
                     : '3px solid transparent',
                   '&:hover': {
-                    bgcolor: 'primary.dark',
+                    bgcolor: 'rgba(107, 92, 197, 0.15)',
                   },
                 }}
               >
