@@ -1,47 +1,23 @@
 :root {
-  --color-primary:        #4A46AA;
-  --color-primary-light:  #6B5CC5;
-  --color-primary-dark:   #1E1B6B;
-  --color-secondary:      #6B5CC5;
-  --color-accent:         #EDE8F8;
-  --color-bg-primary:     #13114A;
-  --color-bg-secondary:   #1E1B6B;
-  --color-text-primary:   #FFFFFF;
-  --color-text-secondary: #9B93D9;
-  --color-text-muted:     #5A529A;
-  --color-button-primary: #6B5CC5;
-  --color-button-hover:   #4A46AA;
-  --color-link:           #9B93D9;
-  --color-link-hover:     #FFFFFF;
-  --color-border:         #3D38A0;
-  --color-border-light:   #C5BFEA;
-  --shadow-card:          0 4px 24px rgba(30, 27, 107, 0.25);
-  --shadow-button:        0 2px 8px rgba(107, 92, 197, 0.4);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg-primary:     #0D0B3D;
-    --color-bg-secondary:   #1E1B6B;
-    --color-text-primary:   #FFFFFF;
-    --color-text-secondary: #9B93D9;
-    --color-text-muted:     #5A529A;
-    --color-border:         #3D38A0;
-    --color-link:           #9B93D9;
-    --color-link-hover:     #FFFFFF;
-    --color-button-hover:   #4A46AA;
-  }
-}
-
-@media print {
-  :root {
-    --color-bg-primary:    #ffffff;
-    --color-bg-secondary:  #f0f0f0;
-    --color-text-primary:  #000000;
-    --color-primary:       #1E1B6B;
-    --color-accent:        #4A46AA;
-    --color-button-primary:#1E1B6B;
-  }
+  --color-primary:        #6060B0;
+  --color-primary-light:  #7070B0;
+  --color-primary-dark:   #5060A0;
+  --color-accent:         #302030;
+  --color-accent-light:   #603040;
+  --color-accent-dark:    #202020;
+  --color-bg-primary:     #FFB0D0;
+  --color-bg-secondary:   #F0A0C0;
+  --color-text-primary:   #302030;
+  --color-text-secondary: #5060A0;
+  --color-text-muted:     #9090C0;
+  --color-button-primary: #6060B0;
+  --color-button-hover:   #5060A0;
+  --color-link:           #6060B0;
+  --color-link-hover:     #5060A0;
+  --color-border:         #D080A0;
+  --color-border-light:   #E090B0;
+  --shadow-card:          0 4px 24px rgba(208, 128, 160, 0.3);
+  --shadow-button:        0 2px 8px rgba(96, 96, 176, 0.4);
 }
 
 * {

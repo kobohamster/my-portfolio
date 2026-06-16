@@ -18,7 +18,7 @@ const Navbar = () => {
             variant='h6'
             component={Link}
             to='/'
-            sx={{ color: '#FFFFFF', fontWeight: 700, textDecoration: 'none' }}
+            sx={{ color: '#302030', fontWeight: 700, textDecoration: 'none' }}
           >
             My Portfolio
           </Typography>
@@ -29,13 +29,13 @@ const Navbar = () => {
                 component={Link}
                 to={item.path}
                 sx={{
-                  color: '#FFFFFF',
+                  color: '#302030',
                   borderRadius: 0,
                   borderBottom: location.pathname === item.path
-                    ? '3px solid #C5BFEA'
+                    ? '3px solid #6060B0'
                     : '3px solid transparent',
                   '&:hover': {
-                    bgcolor: 'rgba(107, 92, 197, 0.15)',
+                    bgcolor: 'rgba(96, 96, 176, 0.15)',
                   },
                 }}
               >
